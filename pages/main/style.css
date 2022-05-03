@@ -18,6 +18,7 @@
     --main-color: #F1CDB3;
     --main-color-light: #FDDCC4;
     --white-color: #FFFFFF;
+    --light-s-color: #FAFAFA;
     --dark-3xl-color: #292929;
     --dark-xl-color: #4C4C4C;
     --dark-l-color: #545454;
@@ -259,7 +260,7 @@ header .logo-subtitle {
     max-width: 270px;
     max-height: 435px;
     text-align: center;
-    background-color: var(--white-color);
+    background-color: var(--light-s-color);
     padding-bottom: 30px;
     margin: 0 45px;
     cursor: pointer;
