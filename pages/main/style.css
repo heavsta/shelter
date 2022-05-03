@@ -2,7 +2,7 @@
     font-family: 'Arial';
     src: url("../../assets/fonts/arial.ttf");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 @font-face {
@@ -31,36 +31,32 @@ html {
 }
 
 body {
-    font-family: "Arial", Helvetica, sans-serif;
+    font-family: 'Arial', Helvetica, sans-serif;
     font-size: 15px;
     margin: 0 auto;
     color: var(--dark-xl-color);
 }
 
 h1, h2, h3, h4, h5 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-weight: 400;
     margin: 0;
 }
 
-h1 {
-    font-family: "Georgia", 'Times New Roman', Times, serif;
+h1 { 
     font-size: 32px;
-    font-weight: 400;
     line-height: 110%;
     letter-spacing: 0.06em;
     color: var(--main-color);
 }
 
 h2 {
-    font-family: "Georgia", 'Times New Roman', Times, serif;
-    font-weight: 400;
     font-size: 44px;
     line-height: 130%;
     color: var(--white-color);
 }
 
 h3 {
-    font-family: "Georgia", 'Times New Roman', Times, serif;
-    font-weight: 400;
     font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.06em;
@@ -68,8 +64,6 @@ h3 {
 }
 
 h4 {
-    font-family: "Georgia", 'Times New Roman', Times, serif;
-    font-weight: 400;
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
@@ -77,8 +71,6 @@ h4 {
 }
 
 h5 {
-    font-family: "Georgia", 'Times New Roman', Times, serif;
-    font-weight: 400;
     font-size: 15px;
     line-height: 110%;
     letter-spacing: 0.06em;
@@ -102,7 +94,7 @@ ul {
 
 button, .button {
     display: inline-block;
-    font-family: "Georgia", 'Times New Roman', Times, serif;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
     padding: 15px 45px;
     font-size: 17px;
     line-height: 130%;
@@ -284,7 +276,7 @@ header .logo-subtitle {
 }
 
 .card-title {
-    font-family: "Georgia", 'Times New Roman', Times, serif;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.06em;
@@ -393,7 +385,7 @@ header .logo-subtitle {
 
 footer {
     background: url(../../assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
-    font-family: "Georgia", 'Times New Roman', Times, serif;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
     color: var(--main-color);
     letter-spacing: 0.06em;
     padding-top: 40px;
