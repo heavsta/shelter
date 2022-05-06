@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'Arial';
+    src: url("../../assets/fonts/arial.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url("../../assets/fonts/georgia.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* SHARED */
+
+:root {
+    --main-color: #F1CDB3;
+    --main-color-light: #FDDCC4;
+    --white-color: #FFFFFF;
+    --light-l-color: #F6F6F6;
+    --light-s-color: #FAFAFA;
+    --dark-3xl-color: #292929;
+    --dark-xl-color: #4C4C4C;
+    --dark-l-color: #545454;
+    --dark-m-color: #B2B2B2;
+    --dark-s-color: #CDCDCD;
+    --light-bg-color: #F6F6F6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 0 auto;
+    color: var(--dark-3xl-color);
+}
+
+h1, h3, h4 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1 { 
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var(--dark-l-color);
+}
+
+h3 {
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--dark-l-color);
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: var(--dark-l-color);
+}
+
+p {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+button, .button {
+    display: inline-block;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    padding: 15px 45px;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 350ms ease-out;
+    color: var(--white-color);
+}
+
+.button-secondary {
+    padding: 13px 43px;
+    background-color: var(--white-color);
+    color: var(--dark-3xl-color);
+    border: 2px solid var(--main-color);
+}
+
+.button-arrow {
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    background-color: var(--light-bg-color);
+}
+
+.button-disabled {
+    border: 2px solid var(--dark-s-color);
+    cursor: default;
+}
+
+.button-active {
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    color: var(--dark-3xl-color);
+    cursor: default;
+}
+
+.button-secondary:hover {
+    background-color: var(--main-color-light);
+    border: 2px solid var(--main-color-light);
+}
+
+/* HEADER */
+
+header {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-subtitle {
+    display: inline-block;
+    letter-spacing: 0.1em;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 10px 0 0 4px;
+    color: var(--dark-3xl-color);
+}
+
+.nav-menu li {
+    display: inline;
+    height: 24px;
+    margin-left: 32px;
+    line-height: 160%;
+}
+
+.nav-menu li a {
+    padding: 3px 0;
+    color: var(--dark-l-color);
+}
+
+.nav-menu li a:hover {
+    color: var(--dark-3xl-color);
+    transition: color 350ms ease-in-out;
+}
+
+.nav-menu li.active a {
+    color: var(--dark-3xl-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+/* PETS */
+
+main {
+    background-color: var(--light-l-color);
+    display: flex;
+    justify-content: center;
+}
+
+#pets {
+    width: 1200px;
+    padding: 80px 40px 100px 40px;
+    text-align: center;
+}
+
+#pets h3 {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 60px 0;
+}
+
+.card {
+    max-width: 270px;
+    max-height: 435px;
+    text-align: center;
+    background-color: var(--light-s-color);
+    padding-bottom: 30px;
+    margin: 0;
+    cursor: pointer;
+    transition: box-shadow 350ms ease-in-out;
+}
+
+.card:hover {
+    background-color: var(--white-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover button {
+    background-color: var(--main-color-light);
+    border: 2px solid var(--main-color-light);
+}
+
+.card-title {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    margin: 28px 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button {
+    margin: 0 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background: url(../../assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    color: var(--main-color);
+    letter-spacing: 0.06em;
+    padding-top: 40px;
+}
+
+footer h3 {
+    color: var(--white-color);
+    margin: 0;
+}
+
+footer li img {
+    margin-right: 20px;
+}
+
+footer li a {
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+}
+
+footer h4 {
+    max-width: 260px;
+    color: var(--main-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content img {
+    max-height: 310px;
+}
+
+.contacts, .locations {
+    margin-top: 16px;
+    height: 234px;
+}
+
+.contacts h3 {
+    max-width: 279px;
+}
+
+.contacts li {
+    margin-top: 43px;
+}
+
+.locations h3 {
+    max-width: 270px;
+}
+
+.locations li {
+    margin-top: 34px;
+}
