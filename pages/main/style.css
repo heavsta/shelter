@@ -205,6 +205,36 @@ header .logo-subtitle {
     margin: 42px 0;
 }
 
+@media all and (max-width: 1280px) {
+    header {
+        width: unset;
+        max-width: 1200px;
+        padding: 30px;
+    }
+
+    .start-screen-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .start-screen-content .content {
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+
+    .start-screen .content a {
+        display: block;
+        width: 118px;
+        margin: 0 auto;
+    }
+
+    .start-screen-content img {
+        max-width: 569px;
+        max-height: 593px;
+        align-self: flex-end;
+    }
+}
+
 /* ABOUT */
 
 #about .about-content {
@@ -226,6 +256,21 @@ header .logo-subtitle {
 #about .content p {
     margin: 25px 0 0 0;
     max-width: 430px;
+}
+
+@media all and (max-width: 1280px) {
+    #about .about-content {
+        width: unset;
+        flex-direction: column-reverse;
+    }
+
+    #about .about-content img {
+        margin-right: unset;
+    }
+
+    #about .content {
+        margin-bottom: 80px;
+    }
 }
 
 /* PETS */
@@ -289,6 +334,25 @@ header .logo-subtitle {
     display: flex;
 }
 
+@media all and (max-width: 1280px) {
+    #pets {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .slider {
+        width: unset;
+    }
+
+    .card {
+        margin: 0 15px;
+    }
+
+    .card:nth-child(3) {
+        display: none;
+    }
+}
+
 /* HELP */
 
 #help {
@@ -330,6 +394,31 @@ header .logo-subtitle {
 
 #help .help-item:nth-child(5) {
     padding-right: 0;
+}
+
+@media all and (max-width: 1280px) {
+    #help .help-content {
+        max-width: 768px;
+        width: unset;
+    }
+
+    #help .help-list {
+        height: unset;
+        justify-content: space-between;
+    }
+
+    #help .help-item {
+        width: 33.33%;
+        margin: unset;
+    }
+
+    #help .help-item:nth-child(1) {
+        padding-left: unset;
+    }
+    
+    #help .help-item:nth-child(5) {
+        padding-right: unset;
+    }
 }
 
 /* DONATION */
@@ -381,6 +470,26 @@ header .logo-subtitle {
     color: var(--dark-m-color);
     line-height: 18px;
     margin: 0;
+}
+
+@media all and (max-width: 1280px) {
+    #donation .donation-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #donation .donation-content .content {
+        max-width: 380px;
+        margin-bottom: 60px;
+    }
+
+    #donation .donation-content img {
+        margin-right: unset;
+    }
+
+    #donation .credit-card-content {
+        justify-content: space-between;
+    }
 }
 
 /* FOOTER */
@@ -443,4 +552,29 @@ footer h4 {
 
 .locations li {
     margin-top: 34px;
+}
+
+@media all and (max-width: 1280px) {
+    footer {
+        padding-top: 0;
+    }
+
+    .footer-content {
+        max-width: 650px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contacts, .locations {
+        margin-top: 30px;
+        margin-bottom: 65px;
+    }
+
+    .contacts {
+        margin-right: 30px;
+    }
+
+    .locations {
+        margin-left: 30px;
+    }
 }

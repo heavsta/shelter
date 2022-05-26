@@ -168,6 +168,13 @@ header .logo-subtitle {
     border-bottom: 3px solid var(--main-color);
 }
 
+@media all and (max-width: 1280px) {
+    header {
+        width: unset;
+        padding: 30px;
+    }
+}
+
 /* PETS */
 
 main {
@@ -232,6 +239,29 @@ main {
     margin: 0 10px;
 }
 
+@media all and (max-width: 1280px) {
+    #pets {
+        width: unset;
+        padding-bottom: 76px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 30px 0 40px 0;
+    }
+
+    .card:nth-child(7),
+    .card:nth-child(8) {
+        display: none;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* FOOTER */
 
 footer {
@@ -292,4 +322,29 @@ footer h4 {
 
 .locations li {
     margin-top: 34px;
+}
+
+@media all and (max-width: 1280px) {
+    footer {
+        padding-top: 0;
+    }
+
+    .footer-content {
+        max-width: 650px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contacts, .locations {
+        margin-top: 30px;
+        margin-bottom: 65px;
+    }
+
+    .contacts {
+        margin-right: 30px;
+    }
+
+    .locations {
+        margin-left: 30px;
+    }
 }
