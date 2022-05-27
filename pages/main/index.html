@@ -7,6 +7,7 @@
     <title>Shelter - Home</title>
     <link rel="stylesheet" href="../../assets/normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <section class="start-screen">
@@ -18,6 +19,33 @@
                 </a>
             </div>
             <nav class="nav-menu">
+                <ul>
+                    <li class="active">
+                        <a href="index.html">About the shelter</a>
+                    </li>
+                    <li>
+                        <a href="../pets/index.html">Our pets</a>
+                    </li>
+                    <li>
+                        <a href="#help">Help the shelter</a>
+                    </li>
+                    <li>
+                        <a href="#footer">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" id="mobile-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="mobile-nav-menu">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1 class="logo-title">Cozy House</h1>
+                        <span class="logo-subtitle">Shelter for pets in Boston</span>
+                    </a>
+                </div>
                 <ul>
                     <li class="active">
                         <a href="index.html">About the shelter</a>
@@ -60,7 +88,7 @@
     <section id="pets">
         <h3>Our friends who<br>are looking for a house</h3>
         <div class="slider">
-            <button type="button" class="button-secondary button-arrow">
+            <button type="button" class="button-secondary button-arrow" id="left-btn">
                 <img src="../../assets/icons/Arrow-left.svg" alt="Arrow towards left side">
             </button>
             <div class="carousel">
@@ -86,7 +114,7 @@
                     </button>
                 </div>
             </div>
-            <button type="button" class="button-secondary button-arrow">
+            <button type="button" class="button-secondary button-arrow" id="right-btn">
                 <img src="../../assets/icons/Arrow-right.svg" alt="Arrow towards right side">
             </button>
         </div>
