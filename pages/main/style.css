@@ -147,7 +147,7 @@ button, .button {
     border: 2px solid var(--main-color-light);
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     body {
         overflow-x: hidden;
     }
@@ -284,7 +284,7 @@ header .logo-subtitle {
     }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     header {
         padding: 30px 10px;
     }
@@ -445,7 +445,7 @@ header .logo-subtitle {
     }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     #about {
         padding: 42px 10px;
     }
@@ -557,7 +557,7 @@ header .logo-subtitle {
     }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     #pets {
         padding: 42px 10px;
     }
@@ -571,15 +571,19 @@ header .logo-subtitle {
         width: 100%;
     }
 
+    .slider {
+        justify-content: center;
+    }
+
     .slider #left-btn {
         order: 1;
-        margin-left: 42px;
+        margin-right: 42px;
         margin-bottom: 42px;
     }
 
     .slider #right-btn {
         order: 2;
-        margin-right: 42px;
+        margin-left: 42px;
         margin-bottom: 42px;
     }
 
@@ -660,7 +664,7 @@ header .logo-subtitle {
     }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     #help {
         padding: 42px 15px;
         margin: 0;
@@ -757,7 +761,7 @@ header .logo-subtitle {
     }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     #donation {
         padding: 42px 10px;
     }
@@ -875,7 +879,7 @@ footer h4 {
     }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     footer {
         text-align: center;
         padding: 30px 10px 0 10px;
@@ -895,6 +899,7 @@ footer h4 {
 
     .contacts,
     .locations {
+        width: 100%;
         margin: 0 0 20px 0;
     }
 
@@ -906,6 +911,12 @@ footer h4 {
 
     .contacts li {
         max-width: 90%;
+    }
+
+    .locations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .locations ul {
